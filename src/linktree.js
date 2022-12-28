@@ -1,26 +1,43 @@
 import React from 'react';
 import './LinkTree.css';
 
+
+
+
 function LinkTree() {
+  function handleClick(event, url) {
+    window.open(url, '_blank');
+  }
+
   return (
-    <div className="linktree">
+    <div className='linktree' style={{ height: '100vh',
+    width: '100vw', }}> 
       <h1 className='linktree-title'>@JanCebulla</h1>
       <ul>
-        <li className="link-button">
-          <img src="Instagram_logo_2022.png" alt="Instagram-Logo" className="social-logo" />
-          <a href="https://www.instagram.com/jan.cebulla/">Instagram</a>
+      <li style={{ textAlign: 'center', margin: '10px' }}>
+        <button className='link-button' onClick={(e) => handleClick(e, 'https://www.instagram.com/jan.cebulla/')}>
+          <img src="Instagram_logo_2022.png" alt="Instagram-Logo" className="social-logo"/> Instagram
+        </button>
         </li>
-        <li className="link-button">
-          <img src="Twitter-logo.png" alt="Twitter-Logo" className="social-logo" />
-          <a href="https://twitter.com/JanCebulla">Twitter</a>
+        <li>
+        <button className='link-button' onClick={(e) => handleClick(e, 'https://twitter.com/JanCebulla')}>
+          <img src="Twitter-logo.png" alt="Twitter-Logo" className="social-logo" /> Twitter
+          </button>
         </li>
-        <li className="link-button">
-          <img src="Mastodon_logotype__simple__new_hue.png" alt="Mastodon-Logo" className="social-logo" />
-          <a href="https://mastodon.social/@jancebulla">Mastodon</a>
+        <li style={{ textAlign: 'center', margin: '10px' }}>
+        <button className="link-button" onClick={(e) => handleClick(e, 'https://mastodon.social/@jancebulla')}>
+          <img src="Mastodon_logotype__simple__new_hue.png" alt="Mastodon-Logo" className="social-logo" />Mastodon
+          </button>
         </li>
-        <li className="link-button">
-          <img src="mastodon-logo.pngpng" alt="GitHub-Logo" className="social-logo" />
-          <a href="https://github.com/SimplyJanDE">GitHub</a>
+        <li style={{ textAlign: 'center', margin: '10px' }}>
+        <button className="link-button" onClick={(e) => handleClick(e, 'https://github.com/SimplyJanDE')}>
+          <img src="github-mark-white.png" alt="GitHub-Logo" className="social-logo" />GitHub
+          </button>
+        </li>
+        <li style={{ textAlign: 'center', margin: '10px' }}>
+        <button className="link-button" onClick={(e) => handleClick(e, 'https://jan-cebulla.de/')}>
+          <img src="globe.png" alt="GitHub-Logo" className="social-logo" />Website
+          </button>
         </li>
       </ul>
     </div>
