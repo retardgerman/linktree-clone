@@ -2,4 +2,6 @@ Welcome to my Linktree clone repository! This project is a reimplementation of t
 
  I hope you find this repository useful and feel free to leave any feedback or suggestions!
  
+ Please note that the links to the social medias are links to my profiles. by the way, a follow is appreciated very much!:) So please embed your own links before using the link tree.
+ 
  Since I am a beginner programmer, this project is created with the help of Open Ai´s ChatGPT!
