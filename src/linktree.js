@@ -35,9 +35,8 @@ function LinkTree() {
           </button>
         </li>
         <li style={{ textAlign: 'center', margin: '10px' }}>
-        <button className="link-button" onClick={(e) => handleClick(e, 'https://jan-cebulla.de/')}>
-          <img src="globe.png" alt="GitHub-Logo" className="social-logo" />Website
-          </button>
+        <button className="website-button" onClick={(e) => handleClick(e, 'https://jan-cebulla.de/')}>
+        Website </button>
         </li>
       </ul>
     </div>
