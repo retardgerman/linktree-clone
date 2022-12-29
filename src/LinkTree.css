@@ -20,6 +20,7 @@
 
 }
 
+
 .linktree {
   text-align: center;
   background-color: black;
@@ -33,7 +34,7 @@
     display: flex;
     align-items: center;
     border: 1px solid white;
-    border-radius: 4px;
+    border-radius: 10px;
     padding: 0.5em 1em;
     margin: 0 auto;
     width: 200px;
@@ -46,11 +47,16 @@
     
   }
 
+  .link-button:hover{
+    background-color: white;
+    color: black;
+  }
+
   .website-button{
     display: flex;
     align-items: center;
     border: 1px solid white;
-    border-radius: 4px;
+    border-radius: 10px;
     padding: 0.5em 1em;
     margin: 0 auto;
     width: 200px;
@@ -61,11 +67,17 @@
     text-align: center ;
     font-family: 'Montserrat'; 
   }
+
+  .website-button:hover{
+    background-color: white;
+    color: black; 
+  }
   
   
   .social-logo {
     width: 2em;
     height: 2em;
     margin-right: 0.5em;
+
   }
   
